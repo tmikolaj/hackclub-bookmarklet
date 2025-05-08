@@ -1,5 +1,5 @@
 # Dark mode bookmarklet for Hack Club's Hacklet
-_Sample website include to showcase it_
+_Sample website included to showcase it_
 
 ## 🛠️ What does it do?
 
@@ -13,4 +13,4 @@ This change creates a smoother, low contrast reading experience
 
 ## 🌐 Sample website
 
-The bookmarklet can be tested on a provided sample website in this repo.
+The bookmarklet can be tested on a provided sample website in this repo or on the [hacklet's website](http://hacklet.hackclub.com/index.html).
