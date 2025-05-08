@@ -28,6 +28,28 @@ javascript:(function() {
     if (chance === 0) {
         document.body.style.transform = 'rotate(2deg)';
         document.body.style.transition = 'transform 0.4s ease';
+
+        const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span, div');
+        textElements.forEach(element => {
+            element.style.transition = 'opacity 0.2s ease-in-out';
+        });
+
+        let flickerCount = 3;
+        let flickerInterval = 200;
+        let flickerDelay = 500;
+
+        let count = 0;
+
+        const flickerIntervalId = setInterval(() => {
+            textElements.forEach(element => {
+                element.style.opacity = count % 2 == 0 ? '0.1' : '1';
+            });
+            count++;
+
+            if (count >= flickerCount * 2) {
+                clearInterval(flickerIntervalId);
+            }
+        }, flickerInterval)
     } else if (chance === 4) {
         const watermark = document.createElement('div');
         watermark.textContent = 'Dark Mode Activated';
