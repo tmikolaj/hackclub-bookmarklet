@@ -1,0 +1,11 @@
+* {
+    background-color: white;
+    color: black;
+}
+
+.center {
+    padding-top: 20px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
