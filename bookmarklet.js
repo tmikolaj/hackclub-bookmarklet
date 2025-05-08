@@ -1,6 +1,7 @@
 javascript:(function() {
-    const existing = document.body.classList.contains('cDarkMode');
-    document.body.classList.toggle('cDarkMode', !existing);
+    const doesStyleExist = document.body.classList.contains('cDarkMode');
+    document.body.classList.toggle('cDarkMode', !doesStyleExist);
+
     const css = `
         html, body {
             margin: 0;
